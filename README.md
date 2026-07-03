@@ -7,7 +7,7 @@ A modern and responsive weather application built using **HTML**, **CSS**, and *
 
 ## 📸 Preview
 
-URL: 
+URL: https://sushmita25dubey.github.io/SkyScan-Weather-App/
 
 ---
 
