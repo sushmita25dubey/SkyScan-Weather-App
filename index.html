@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyScan Weather</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌈</text></svg>">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <nav>
+
+        <div class="logo">
+            SkyScan Weather
+        </div>
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="Search city..."
+            >
+
+        </div>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <i class="fa-solid fa-moon"></i>
+
+            <i class="fa-solid fa-gear"></i>
+
+        </div>
+
+    </nav>
+
+    <section class="weather-card">
+
+        <div class="left">
+
+            <img
+                id="weatherIcon"
+                src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+                alt=""
+            >
+
+            <h1 id="city">
+                GOA
+            </h1>
+
+            <p id="date">
+                Monday, 12 June
+            </p>
+
+        </div>
+
+
+        <div class="right">
+
+            <h2 id="temperature">
+                28°C
+            </h2>
+
+            <span id="condition">
+                Sunny
+            </span>
+
+
+            <div class="details">
+
+                <div class="card">
+
+                    <small>Feels Like</small>
+
+                    <h3 id="feelsLike">
+                        26°C
+                    </h3>
+
+                </div>
+
+
+                <div class="card">
+
+                    <small>Humidity</small>
+
+                    <h3 id="humidity">
+                        45%
+                    </h3>
+
+                </div>
+
+
+                <div class="card">
+
+                    <small>Wind Speed</small>
+
+                    <h3 id="wind">
+                        12 km/h
+                    </h3>
+
+                </div>
+
+
+                <div class="card">
+
+                    <small>Pressure</small>
+
+                    <h3 id="pressure">
+                        1012 hPa
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="forecast-section">
+
+        <div class="forecast-header">
+
+            <h2>
+                5-Day Forecast
+            </h2>
+
+            <a href="#">
+                Full Report
+            </a>
+
+        </div>
+
+        <div class="forecast-container">
+
+            <div class="forecast-card">
+
+                <h4>Tue</h4>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png">
+
+                <h3>29°</h3>
+
+                <p>18°</p>
+
+            </div>
+
+
+            <div class="forecast-card">
+
+                <h4>Wed</h4>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/414/414825.png">
+
+                <h3>25°</h3>
+
+                <p>16°</p>
+
+            </div>
+
+
+            <div class="forecast-card">
+
+                <h4>Thu</h4>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png">
+
+                <h3>22°</h3>
+
+                <p>14°</p>
+
+            </div>
+
+
+            <div class="forecast-card">
+
+                <h4>Fri</h4>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png">
+
+                <h3>27°</h3>
+
+                <p>17°</p>
+
+            </div>
+
+
+            <div class="forecast-card">
+
+                <h4>Sat</h4>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png">
+
+                <h3>30°</h3>
+
+                <p>20°</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-logo">
+            SkyScan Weather
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms</a>
+
+            <a href="#">API</a>
+
+            <a href="#">Contact</a>
+
+        </div>
+
+    </footer>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

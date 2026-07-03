@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b1220;
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    max-width:1300px;
+}
+
+
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#27d8ff;
+}
+
+.search-box{
+    width:420px;
+    height:55px;
+    background:#131d31;
+    border-radius:40px;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+    box-shadow:0 0 20px rgba(0,255,255,.08);
+}
+
+.search-box i{
+    color:#27d8ff;
+    margin-right:15px;
+}
+
+.search-box input{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:16px;
+}
+
+.search-box input::placeholder{
+    color:#9aa8bd;
+}
+
+.nav-icons{
+    display:flex;
+    gap:18px;
+}
+
+.nav-icons i{
+    width:45px;
+    height:45px;
+    background:#131d31;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-icons i:hover{
+    background:#27d8ff;
+    color:#000;
+}
+
+
+
+.weather-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(20,29,47,.75);
+    backdrop-filter:blur(20px);
+    border-radius:30px;
+    padding:45px;
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.left{
+    text-align:center;
+}
+
+.left img{
+    width:180px;
+}
+
+.left h1{
+    margin-top:20px;
+    font-size:38px;
+}
+
+.left p{
+    margin-top:10px;
+    color:#b4c2d8;
+}
+
+.right{
+    width:55%;
+}
+
+#temperature{
+    font-size:90px;
+    font-weight:700;
+}
+
+#condition{
+    display:inline-block;
+    margin-top:10px;
+    color:#27d8ff;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+
+
+.details{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#16233b;
+    padding:22px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(39,216,255,.25);
+}
+
+.card small{
+    color:#8ea1ba;
+    font-size:14px;
+}
+
+.card h3{
+    margin-top:10px;
+    font-size:26px;
+}
+
+
+
+.forecast-section{
+    margin-top:40px;
+}
+
+.forecast-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.forecast-header h2{
+    font-size:28px;
+}
+
+.forecast-header a{
+    color:#27d8ff;
+    text-decoration:none;
+}
+
+.forecast-container{
+    display:flex;
+    gap:20px;
+}
+
+.forecast-card{
+    flex:1;
+    background:#16233b;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.forecast-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(39,216,255,.25);
+}
+
+.forecast-card img{
+    width:70px;
+    margin:15px 0;
+}
+
+.forecast-card h3{
+    font-size:28px;
+}
+
+.forecast-card p{
+    color:#9fb1c8;
+}
+
+footer{
+    margin-top:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#9fb1c8;
+}
+
+.footer-logo{
+    font-size:22px;
+    font-weight:700;
+    color:#27d8ff;
+}
+
+.footer-links{
+    display:flex;
+    gap:25px;
+}
+
+.footer-links a{
+    color:#9fb1c8;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:#27d8ff;
+}
+
+
+@media(max-width:992px){
+
+.weather-card{
+    flex-direction:column;
+    gap:40px;
+}
+
+.right{
+    width:100%;
+}
+
+.forecast-container{
+    flex-wrap:wrap;
+}
+
+.forecast-card{
+    min-width:160px;
+}
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+.search-box{
+    width:100%;
+}
+
+footer{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+}
